@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Magnate Flora House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --lavender-primary: #967bb6;
+            --lavender-secondary: #b39ddb;
+            --lavender-light: #e6e6fa;
+            --lavender-dark: #4b3d60;
+            --green-accent: #7a9b76;
+            --text-dark: #333;
+            --text-light: #f8f8ff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fefeff;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--lavender-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(150, 123, 182, 0.9), rgba(75, 61, 96, 0.9)), url('https://images.unsplash.com/photo-1517824806704-9040b037703b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--lavender-light);
+        }
+        
+        .logo h1 {
+            color: var(--text-light);
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        
+        .logo span {
+            color: var(--lavender-light);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--lavender-light);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--lavender-light);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(150, 123, 182, 0.85), rgba(75, 61, 96, 0.85)), url('https://images.unsplash.com/photo-1597848212624-e6f1f5d6f7d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            text-align: center;
+            padding: 5rem 0;
+        }
+        
+        .page-header h1 {
+            color: var(--text-light);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Privacy Content */
+        .privacy-content {
+            padding: 5rem 0;
+        }
+        
+        .privacy-container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+        
+        .privacy-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--lavender-light);
+        }
+        
+        .privacy-section:last-child {
+            border-bottom: none;
+        }
+        
+        .privacy-section h2 {
+            color: var(--lavender-primary);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--lavender-light);
+        }
+        
+        .privacy-section h3 {
+            color: var(--lavender-dark);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .privacy-section p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .privacy-section ul, .privacy-section ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .privacy-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .important-note {
+            background-color: var(--lavender-light);
+            border-left: 4px solid var(--lavender-primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .important-note h4 {
+            color: var(--lavender-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .data-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .data-type-card {
+            background-color: var(--lavender-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--lavender-primary);
+        }
+        
+        .data-type-card h4 {
+            color: var(--lavender-dark);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .update-date {
+            text-align: center;
+            color: var(--lavender-dark);
+            font-style: italic;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--lavender-light);
+        }
+        
+        .privacy-controls {
+            background-color: var(--lavender-light);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .privacy-controls h3 {
+            color: var(--lavender-dark);
+            margin-bottom: 1.5rem;
+        }
+        
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .control-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .control-item h4 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--lavender-primary);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--lavender-dark);
+            color: var(--text-light);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo h3 {
+            color: var(--text-light);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo span {
+            color: var(--lavender-light);
+        }
+        
+        .footer-links h4, .footer-newsletter h4 {
+            color: var(--lavender-light);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lavender-light);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-address {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .footer-address p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        
+        .address-icon {
+            color: var(--lavender-light);
+            margin-right: 10px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                width: 100%;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .privacy-container {
+                padding: 2rem 1.5rem;
+            }
+            
+            .data-types, .controls-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-spa logo-icon"></i>
+                <div>
+                    <h1>Magnate <span>Flora House</span></h1>
+                    <p>Lavender Gardening Specialists</p>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookies Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.</p>
+        </div>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="privacy-content">
+        <div class="container">
+            <div class="privacy-container">
+                <div class="important-note">
+                    <h4><i class="fas fa-shield-alt"></i> Our Commitment to Your Privacy</h4>
+                    <p>At Magnate Flora House, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>1. Information We Collect</h2>
+                    <p>We collect information that you provide directly to us, as well as information automatically collected when you use our services.</p>
+                    
+                    <div class="data-types">
+                        <div class="data-type-card">
+                            <h4><i class="fas fa-user-circle"></i> Personal Information</h4>
+                            <p>When you create an account, make a purchase, or contact us, we may collect:</p>
+                            <ul>
+                                <li>Name and contact details</li>
+                                <li>Shipping and billing addresses</li>
+                                <li>Payment information</li>
+                                <li>Gardening preferences and interests</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="data-type-card">
+                            <h4><i class="fas fa-cookie-bite"></i> Automatically Collected Information</h4>
+                            <p>When you visit our website, we may automatically collect:</p>
+                            <ul>
+                                <li>IP address and device information</li>
+                                <li>Browser type and settings</li>
+                                <li>Pages visited and time spent</li>
+                                <li>Referring website information</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="data-type-card">
+                            <h4><i class="fas fa-chart-line"></i> Usage and Analytics Data</h4>
+                            <p>We collect information about how you interact with our services:</p>
+                            <ul>
+                                <li>Pages viewed and features used</li>
+                                <li>Search queries and preferences</li>
+                                <li>Purchase history and patterns</li>
+                                <li>Gardening advice preferences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>2. How We Use Your Information</h2>
+                    <p>We use the information we collect for various purposes, including:</p>
+                    
+                    <h3>2.1 Providing and Improving Services</h3>
+                    <p>We use your information to:</p>
+                    <ul>
+                        <li>Process your orders and transactions</li>
+                        <li>Provide customer support and respond to inquiries</li>
+                        <li>Personalize your gardening experience</li>
+                        <li>Improve our website, products, and services</li>
+                        <li>Develop new features and functionality</li>
+                    </ul>
+                    
+                    <h3>2.2 Communications</h3>
+                    <p>With your consent, we may use your information to:</p>
+                    <ul>
+                        <li>Send you gardening tips and newsletters</li>
+                        <li>Notify you about seasonal planting advice</li>
+                        <li>Inform you about special offers and promotions</li>
+                        <li>Provide updates about your orders</li>
+                        <li>Share lavender care reminders</li>
+                    </ul>
+                    
+                    <h3>2.3 Legal and Security Purposes</h3>
+                    <p>We may use your information to:</p>
+                    <ul>
+                        <li>Protect against fraudulent transactions</li>
+                        <li>Comply with legal obligations</li>
+                        <li>Enforce our terms and policies</li>
+                        <li>Protect the rights and safety of our users</li>
+                    </ul>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>3. How We Share Your Information</h2>
+                    <p>We do not sell your personal information to third parties. We may share your information in the following circumstances:</p>
+                    
+                    <h3>3.1 Service Providers</h3>
+                    <p>We may share information with third-party service providers who help us operate our business, such as:</p>
+                    <ul>
+                        <li>Payment processors for secure transactions</li>
+                        <li>Shipping carriers for order delivery</li>
+                        <li>Email service providers for communications</li>
+                        <li>Analytics providers to understand website usage</li>
+                    </ul>
+                    
+                    <h3>3.2 Legal Requirements</h3>
+                    <p>We may disclose your information if required by law, such as:</p>
+                    <ul>
+                        <li>To comply with a legal obligation</li>
+                        <li>To protect and defend our rights or property</li>
+                        <li>To prevent or investigate possible wrongdoing</li>
+                        <li>To protect the personal safety of users or the public</li>
+                    </ul>
+                    
+                    <h3>3.3 Business Transfers</h3>
+                    <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you of any such change in ownership or control.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>4. Cookies and Tracking Technologies</h2>
+                    <div class="important-note">
+                        <h4><i class="fas fa-cookie"></i> About Cookies</h4>
+                        <p>We use cookies and similar tracking technologies to enhance your browsing experience. For detailed information about the cookies we use and how to manage your preferences, please see our separate <a href="cookies.html" style="color: var(--lavender-primary); text-decoration: underline;">Cookies Policy</a>.</p>
+                    </div>
+                    
+                    <p>Cookies help us:</p>
+                    <ul>
+                        <li>Remember your preferences and settings</li>
+                        <li>Keep you logged in to your account</li>
+                        <li>Understand how you use our website</li>
+                        <li>Provide personalized gardening recommendations</li>
+                        <li>Improve website performance and security</li>
+                    </ul>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>5. Data Security</h2>
+                    <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+                    
+                    <h3>5.1 Security Measures</h3>
+                    <p>Our security measures include:</p>
+                    <ul>
+                        <li>Encryption of sensitive data during transmission</li>
+                        <li>Secure servers with firewall protection</li>
+                        <li>Regular security assessments and updates</li>
+                        <li>Limited access to personal information on a need-to-know basis</li>
+                        <li>Secure payment processing through trusted providers</li>
+                    </ul>
+                    
+                    <h3>5.2 Data Retention</h3>
+                    <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>6. Your Privacy Rights</h2>
+                    <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+                    
+                    <div class="privacy-controls">
+                        <h3><i class="fas fa-user-cog"></i> Your Control Options</h3>
+                        <div class="controls-grid">
+                            <div class="control-item">
+                                <h4><i class="fas fa-eye"></i> Access and Update</h4>
+                                <p>You can access and update your account information through your profile settings or by contacting us.</p>
+                            </div>
+                            
+                            <div class="control-item">
+                                <h4><i class="fas fa-ban"></i> Opt-Out</h4>
+                                <p>You can opt out of marketing communications by using the unsubscribe link in our emails or contacting us directly.</p>
+                            </div>
+                            
+                            <div class="control-item">
+                                <h4><i class="fas fa-trash-alt"></i> Deletion</h4>
+                                <p>You may request deletion of your account and personal information, subject to legal and operational requirements.</p>
+                            </div>
+                            
+                            <div class="control-item">
+                                <h4><i class="fas fa-download"></i> Data Portability</h4>
+                                <p>You can request a copy of your personal information in a structured, machine-readable format.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>To exercise any of these rights, please contact us using the information provided in the "Contact Us" section below. We will respond to your request within 30 days.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>7. Children's Privacy</h2>
+                    <p>Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children under 16.</p>
+                    
+                    <p>If we become aware that we have collected personal information from a child under 16 without parental consent, we will take steps to remove that information. If you believe we might have any information from or about a child under 16, please contact us immediately.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>8. International Data Transfers</h2>
+                    <p>Magnate Flora House is based in the United States. If you are accessing our services from outside the U.S., please be aware that your information may be transferred to, stored, and processed in the U.S.</p>
+                    
+                    <p>By using our services, you consent to the transfer of your information to the U.S. and the processing of that information as described in this Privacy Policy.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>9. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons.</p>
+                    
+                    <p>We will notify you of any material changes by posting the updated Privacy Policy on our website with a new effective date. We encourage you to review this Privacy Policy periodically for any changes.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h2>10. Contact Us</h2>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+                    
+                    <div class="data-type-card" style="margin-top: 1.5rem;">
+                        <h4><i class="fas fa-envelope"></i> Privacy Inquiries</h4>
+                        <ul>
+                            <li><strong>By email:</strong> privacy@magnateflorahouse.com</li>
+                            <li><strong>By mail:</strong> Magnate Flora House Privacy Office, 123 Lavender Lane, Bloomsbury, Horticulture District, HV 12345</li>
+                            <li><strong>By phone:</strong> +1 (555) 123-4567 (Monday-Friday, 9am-5pm EST)</li>
+                            <li><strong>Online:</strong> Through our <a href="contact.html" style="color: var(--lavender-primary); text-decoration: underline;">Contact Form</a></li>
+                        </ul>
+                    </div>
+                    
+                    <p style="margin-top: 1.5rem;">We take privacy concerns seriously and will respond to your inquiry within 30 days.</p>
+                </div>
+                
+                <div class="update-date">
+                    <p><strong>Last Updated:</strong> November 15, 2023</p>
+                    <p><em>This Privacy Policy was last updated on the date indicated above. We encourage you to review this policy periodically for any changes.</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h3>Magnate <span>Flora House</span></h3>
+                    <p>Your premier destination for lavender gardening knowledge, plants, and products since 1995.</p>
+                    <div class="social-icons" style="margin-top: 1.5rem;">
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Lavender</a></li>
+                        <li><a href="index.html#varieties">Lavender Varieties</a></li>
+                        <li><a href="index.html#growing">Growing Guide</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookies Policy</a></li>
+                        <li><a href="contact.html#shipping">Shipping Policy</a></li>
+                        <li><a href="contact.html#returns">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Address and Contact Information in Footer -->
+            <div class="footer-address">
+                <p><i class="fas fa-map-marker-alt address-icon"></i> <strong>Magnate Flora House</strong> | 123 Lavender Lane, Bloomsbury, Horticulture District, HV 12345</p>
+                <p><i class="fas fa-phone address-icon"></i> +1 (555) 123-4567 | <i class="fas fa-envelope address-icon"></i> info@magnateflorahouse.com</p>
+                <p><i class="fas fa-clock address-icon"></i> Monday-Friday: 9am-6pm | Saturday: 10am-4pm | Sunday: Closed</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Magnate Flora House. All rights reserved. | Lavender gardening expertise since 1995.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            
+            // Change icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Smooth scrolling for anchor links within the page
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                // Only handle links that point to elements on this page
+                const targetId = this.getAttribute('href');
+                if (targetId === '#' || targetId.includes('.html')) return;
+                
+                e.preventDefault();
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use | Magnate Flora House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --lavender-primary: #967bb6;
+            --lavender-secondary: #b39ddb;
+            --lavender-light: #e6e6fa;
+            --lavender-dark: #4b3d60;
+            --green-accent: #7a9b76;
+            --text-dark: #333;
+            --text-light: #f8f8ff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fefeff;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--lavender-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(150, 123, 182, 0.9), rgba(75, 61, 96, 0.9)), url('https://images.unsplash.com/photo-1517824806704-9040b037703b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--lavender-light);
+        }
+        
+        .logo h1 {
+            color: var(--text-light);
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        
+        .logo span {
+            color: var(--lavender-light);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--lavender-light);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--lavender-light);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(150, 123, 182, 0.85), rgba(75, 61, 96, 0.85)), url('https://images.unsplash.com/photo-1597848212624-e6f1f5d6f7d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            text-align: center;
+            padding: 5rem 0;
+        }
+        
+        .page-header h1 {
+            color: var(--text-light);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Terms Content */
+        .terms-content {
+            padding: 5rem 0;
+        }
+        
+        .terms-container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+        
+        .terms-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--lavender-light);
+        }
+        
+        .terms-section:last-child {
+            border-bottom: none;
+        }
+        
+        .terms-section h2 {
+            color: var(--lavender-primary);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--lavender-light);
+        }
+        
+        .terms-section h3 {
+            color: var(--lavender-dark);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .terms-section p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .terms-section ul, .terms-section ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .terms-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .important-note {
+            background-color: var(--lavender-light);
+            border-left: 4px solid var(--lavender-primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .important-note h4 {
+            color: var(--lavender-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .update-date {
+            text-align: center;
+            color: var(--lavender-dark);
+            font-style: italic;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--lavender-light);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--lavender-dark);
+            color: var(--text-light);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo h3 {
+            color: var(--text-light);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo span {
+            color: var(--lavender-light);
+        }
+        
+        .footer-links h4, .footer-newsletter h4 {
+            color: var(--lavender-light);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lavender-light);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-address {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .footer-address p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        
+        .address-icon {
+            color: var(--lavender-light);
+            margin-right: 10px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                width: 100%;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .terms-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-spa logo-icon"></i>
+                <div>
+                    <h1>Magnate <span>Flora House</span></h1>
+                    <p>Lavender Gardening Specialists</p>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookies Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Terms of Use</h1>
+            <p>Please read these terms and conditions carefully before using our website and services</p>
+        </div>
+    </section>
+
+    <!-- Terms Content -->
+    <section class="terms-content">
+        <div class="container">
+            <div class="terms-container">
+                <div class="important-note">
+                    <h4><i class="fas fa-exclamation-circle"></i> Important Notice</h4>
+                    <p>By accessing and using the Magnate Flora House website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please do not use our website.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>These Terms of Use ("Terms") govern your access to and use of the Magnate Flora House website, products, services, and content (collectively, the "Services"). By accessing or using our Services, you agree to comply with and be bound by these Terms.</p>
+                    <p>We reserve the right to modify these Terms at any time. We will notify users of any material changes by posting the updated Terms on our website with a new effective date. Your continued use of our Services after such changes constitutes your acceptance of the new Terms.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>2. Description of Services</h2>
+                    <p>Magnate Flora House provides information, products, and services related to lavender gardening, including but not limited to:</p>
+                    <ul>
+                        <li>Educational content about lavender cultivation and care</li>
+                        <li>Online purchasing of lavender plants, seeds, and related products</li>
+                        <li>Gardening workshops and consultation services</li>
+                        <li>Newsletters and educational materials</li>
+                        <li>Community forums and discussion boards</li>
+                    </ul>
+                    <p>We reserve the right to modify, suspend, or discontinue any aspect of our Services at any time without notice.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>3. User Accounts and Registration</h2>
+                    <p>Certain features of our Services may require you to create an account. When creating an account, you agree to:</p>
+                    <ul>
+                        <li>Provide accurate, current, and complete information</li>
+                        <li>Maintain and promptly update your account information</li>
+                        <li>Maintain the security of your password and accept all risks of unauthorized access</li>
+                        <li>Notify us immediately if you discover or suspect any security breaches</li>
+                        <li>Take responsibility for all activities that occur under your account</li>
+                    </ul>
+                    <p>We reserve the right to suspend or terminate accounts that violate these Terms or are used for inappropriate activities.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>4. Purchases and Payments</h2>
+                    <p>When you make purchases through our website, you agree to the following:</p>
+                    
+                    <h3>4.1 Product Information</h3>
+                    <p>We strive to provide accurate product descriptions and images. However, actual colors and appearances may vary due to monitor settings and natural variations in plants. We do not guarantee that product descriptions or other content are accurate, complete, or error-free.</p>
+                    
+                    <h3>4.2 Pricing and Payment</h3>
+                    <p>All prices are listed in U.S. dollars unless otherwise specified. We reserve the right to adjust prices at any time. Payment must be completed at the time of purchase using one of our accepted payment methods.</p>
+                    
+                    <h3>4.3 Shipping and Delivery</h3>
+                    <p>Shipping times are estimates and not guarantees. We are not responsible for delays caused by shipping carriers or unforeseen circumstances. Live plants are shipped according to season and climate considerations to ensure viability.</p>
+                    
+                    <h3>4.4 Returns and Refunds</h3>
+                    <p>Due to the perishable nature of plants, our return policy is limited. Please refer to our specific Return Policy for detailed information. Digital products and services are non-refundable once accessed.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>5. Intellectual Property Rights</h2>
+                    <p>All content on this website, including but not limited to text, graphics, logos, images, videos, audio clips, digital downloads, data compilations, and software, is the property of Magnate Flora House or its content suppliers and is protected by international copyright laws.</p>
+                    
+                    <h3>5.1 Limited License</h3>
+                    <p>We grant you a limited, non-exclusive, non-transferable license to access and use our Services for personal, non-commercial purposes. This license does not include:</p>
+                    <ul>
+                        <li>Resale or commercial use of our Services or content</li>
+                        <li>Collection and use of product listings, descriptions, or prices</li>
+                        <li>Derivative use of our Services or content</li>
+                        <li>Downloading or copying of account information for the benefit of another party</li>
+                        <li>Use of data mining, robots, or similar data gathering and extraction tools</li>
+                    </ul>
+                    
+                    <h3>5.2 Trademarks</h3>
+                    <p>"Magnate Flora House," our logo, and other marks indicated on our website are trademarks of Magnate Flora House. Other graphics, logos, and service names are trademarks of their respective owners.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>6. User Conduct and Responsibilities</h2>
+                    <p>You agree to use our Services only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of our Services.</p>
+                    
+                    <p>You agree not to:</p>
+                    <ul>
+                        <li>Use our Services in any way that breaches any applicable local, national, or international law or regulation</li>
+                        <li>Post, upload, or transmit any content that is unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, or otherwise objectionable</li>
+                        <li>Impersonate any person or entity, or falsely state or misrepresent your affiliation with a person or entity</li>
+                        <li>Interfere with or disrupt our Services or servers or networks connected to our Services</li>
+                        <li>Attempt to gain unauthorized access to our Services, other accounts, computer systems, or networks</li>
+                        <li>Use our Services to transmit any viruses, worms, defects, Trojan horses, or any items of a destructive nature</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>7. Gardening Advice and Disclaimers</h2>
+                    <div class="important-note">
+                        <h4><i class="fas fa-seedling"></i> Important Gardening Disclaimer</h4>
+                        <p>The gardening advice, tips, and information provided on our website are for general educational purposes only. Plant growth and success depend on numerous factors including climate, soil conditions, weather, and care practices. We cannot guarantee specific results from following our advice.</p>
+                    </div>
+                    
+                    <p>You acknowledge and agree that:</p>
+                    <ul>
+                        <li>Gardening involves inherent risks and uncertainties</li>
+                        <li>Plant health and growth are influenced by factors beyond our control</li>
+                        <li>You should adapt general gardening advice to your specific local conditions</li>
+                        <li>For specific gardening problems, consulting with a local horticulturist is recommended</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>8. Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by applicable law, Magnate Flora House shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                    <ul>
+                        <li>Your access to or use of or inability to access or use our Services</li>
+                        <li>Any conduct or content of any third party on our Services</li>
+                        <li>Any content obtained from our Services</li>
+                        <li>Unauthorized access, use, or alteration of your transmissions or content</li>
+                        <li>The failure of plants to thrive or survive after purchase</li>
+                    </ul>
+                    
+                    <p>In no event shall our aggregate liability exceed the amount you paid us, if any, in the past six months for the Services giving rise to the claim.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>9. Indemnification</h2>
+                    <p>You agree to defend, indemnify, and hold harmless Magnate Flora House, its officers, directors, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited to attorney's fees) arising from:</p>
+                    <ul>
+                        <li>Your use of and access to our Services</li>
+                        <li>Your violation of any term of these Terms</li>
+                        <li>Your violation of any third-party right, including without limitation any copyright, property, or privacy right</li>
+                        <li>Any claim that your content caused damage to a third party</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>10. Governing Law and Dispute Resolution</h2>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of the State of [Your State], without regard to its conflict of law provisions.</p>
+                    
+                    <p>Any dispute arising from or relating to these Terms or your use of our Services shall be resolved through informal negotiation between the parties. If the dispute cannot be resolved informally, it shall be submitted to binding arbitration in accordance with the rules of the American Arbitration Association.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>11. Termination</h2>
+                    <p>We may terminate or suspend your access to our Services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.</p>
+                    
+                    <p>Upon termination, your right to use our Services will immediately cease. All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h2>12. Contact Information</h2>
+                    <p>If you have any questions about these Terms of Use, please contact us:</p>
+                    <ul>
+                        <li><strong>By email:</strong> legal@magnateflorahouse.com</li>
+                        <li><strong>By mail:</strong> Magnate Flora House Legal Department, 123 Lavender Lane, Bloomsbury, Horticulture District, HV 12345</li>
+                        <li><strong>By phone:</strong> +1 (555) 123-4567 (Monday-Friday, 9am-5pm EST)</li>
+                    </ul>
+                </div>
+                
+                <div class="update-date">
+                    <p><strong>Last Updated:</strong> November 15, 2023</p>
+                    <p><em>These Terms of Use were last updated on the date indicated above. We encourage you to review these Terms periodically for any changes.</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h3>Magnate <span>Flora House</span></h3>
+                    <p>Your premier destination for lavender gardening knowledge, plants, and products since 1995.</p>
+                    <div class="social-icons" style="margin-top: 1.5rem;">
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" style="color: white; margin-right: 1rem; font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Lavender</a></li>
+                        <li><a href="index.html#varieties">Lavender Varieties</a></li>
+                        <li><a href="index.html#growing">Growing Guide</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookies Policy</a></li>
+                        <li><a href="contact.html#shipping">Shipping Policy</a></li>
+                        <li><a href="contact.html#returns">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Address and Contact Information in Footer -->
+            <div class="footer-address">
+                <p><i class="fas fa-map-marker-alt address-icon"></i> <strong>Magnate Flora House</strong> | 123 Lavender Lane, Bloomsbury, Horticulture District, HV 12345</p>
+                <p><i class="fas fa-phone address-icon"></i> +1 (555) 123-4567 | <i class="fas fa-envelope address-icon"></i> info@magnateflorahouse.com</p>
+                <p><i class="fas fa-clock address-icon"></i> Monday-Friday: 9am-6pm | Saturday: 10am-4pm | Sunday: Closed</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Magnate Flora House. All rights reserved. | Lavender gardening expertise since 1995.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            
+            // Change icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Smooth scrolling for anchor links within the page
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                // Only handle links that point to elements on this page
+                const targetId = this.getAttribute('href');
+                if (targetId === '#' || targetId.includes('.html')) return;
+                
+                e.preventDefault();
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
